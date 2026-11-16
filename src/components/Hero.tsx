@@ -210,28 +210,10 @@ export function Hero() {
               style={{ x: p.cx, y: p.cy, transformBox: "fill-box", transformOrigin: "center" }}
             >
               <PlanterTop p={p} />
-              <text
-                y={-p.r - 11}
-                textAnchor="middle"
-                fill={INKT}
-                fillOpacity={0.78}
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontStyle: "italic",
-                  fontSize: 14,
-                  fontVariationSettings: '"opsz" 14',
-                }}
-              >
-                {p.label}
-              </text>
             </motion.g>
           ))}
         </motion.svg>
       )}
-
-      <p className="marge absolute left-0 top-7 text-[0.8125rem] font-normal uppercase tracking-[0.52em] text-mangaan sm:top-9">
-        Portfolio
-      </p>
 
       <motion.div style={{ y: titleDrift }} className="marge absolute inset-x-0 bottom-0 pb-8 sm:pb-11">
         <div ref={titleRef} className="inline-block pr-2">
@@ -259,7 +241,7 @@ export function Hero() {
           <button
             type="button"
             onClick={() => scrollTo("#inhoud")}
-            className="spatie group -m-3 flex shrink-0 items-center gap-3 p-3 text-mangaan"
+            className="spatie group -m-3 flex min-h-11 shrink-0 items-center justify-center gap-3 p-3 text-mangaan"
           >
             <span>inhoud</span>
             <span aria-hidden="true" className="relative block h-9 w-px overflow-hidden bg-mangaan/25">

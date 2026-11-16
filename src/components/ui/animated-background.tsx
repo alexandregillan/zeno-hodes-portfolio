@@ -94,7 +94,7 @@ export function AnimatedBackground({
             />
           )}
         </AnimatePresence>
-        <div className='z-10'>{child.props.children}</div>
+        <div className='relative z-10 flex items-center justify-center'>{child.props.children}</div>
       </>
     );
   });

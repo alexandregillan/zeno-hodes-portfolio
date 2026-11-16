@@ -15,42 +15,46 @@ function Maatregelen() {
   return (
     <div className="raster items-start gap-y-8">
       <div className="col-span-12 lg:col-span-7">
-        <Unveil className="relative bg-papier">
-          <Img
-            name="zevensprong/kaart-1d"
-            alt="Kaart van variant 1D+ met de maatregelen genummerd van 1 tot 10"
-            className="w-full"
-          />
-          <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-            {z.markers.map((m, i) => {
-              const lit = on === m.n;
-              return (
-                <span
-                  key={i}
-                  className="absolute block aspect-square w-[5.2%] -translate-x-1/2 -translate-y-1/2"
-                  style={{ left: `${m.x}%`, top: `${m.y}%` }}
-                >
-                  <motion.span
-                    className="absolute inset-0 rounded-full border-2 border-mangaan"
-                    initial={false}
-                    animate={{ opacity: lit ? 1 : 0, scale: lit ? 1 : 1.6 }}
-                    transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-                  />
-                  {lit && (
+        {/* On a phone the map keeps a readable size and scrolls sideways. */}
+        <div className="geen-balk -mx-[clamp(1.25rem,5.2vw,5.5rem)] overflow-x-auto px-[clamp(1.25rem,5.2vw,5.5rem)] sm:mx-0 sm:overflow-visible sm:px-0">
+          <Unveil className="relative min-w-[40rem] bg-papier sm:min-w-0">
+            <Img
+              name="zevensprong/kaart-1d"
+              alt="Kaart van variant 1D+ met de maatregelen genummerd van 1 tot 10"
+              className="w-full"
+            />
+            <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+              {z.markers.map((m, i) => {
+                const lit = on === m.n;
+                return (
+                  <span
+                    key={i}
+                    className="absolute block aspect-square w-[5.2%] -translate-x-1/2 -translate-y-1/2"
+                    style={{ left: `${m.x}%`, top: `${m.y}%` }}
+                  >
                     <motion.span
-                      className="absolute inset-0 rounded-full bg-mangaan/25"
-                      initial={{ scale: 1, opacity: 0.8 }}
-                      animate={{ scale: 2.4, opacity: 0 }}
-                      transition={{ duration: 1.3, repeat: Infinity, ease: "easeOut" }}
+                      className="absolute inset-0 rounded-full border-2 border-mangaan"
+                      initial={false}
+                      animate={{ opacity: lit ? 1 : 0, scale: lit ? 1 : 1.6 }}
+                      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                     />
-                  )}
-                </span>
-              );
-            })}
-          </div>
-        </Unveil>
+                    {lit && (
+                      <motion.span
+                        className="absolute inset-0 rounded-full bg-mangaan/25"
+                        initial={{ scale: 1, opacity: 0.8 }}
+                        animate={{ scale: 2.4, opacity: 0 }}
+                        transition={{ duration: 1.3, repeat: Infinity, ease: "easeOut" }}
+                      />
+                    )}
+                  </span>
+                );
+              })}
+            </div>
+          </Unveil>
+        </div>
         <p className="bijschrift mt-2.5">
           {z.variantKop} {z.variantSub}
+          <span className="sm:hidden">, veeg om de kaart te verschuiven</span>
         </p>
       </div>
 

@@ -3,41 +3,41 @@
 
 export type ChapterId = "over-mij" | "turfhaven" | "gracht" | "wijnhaven" | "zevensprong" | "uitgevoerd";
 
-export const chapters: { id: ChapterId; nr: string; title: string; index: string; preview: string }[] = [
-  { id: "over-mij", nr: "00", title: "Over mij", index: "over mij", preview: "over/portret" },
+export const chapters: { id: ChapterId; nr: string; title: string; index: string; kort: string; preview: string }[] = [
+  { id: "over-mij", nr: "00", title: "Over mij", index: "over mij", kort: "Over mij", preview: "over/portret" },
   {
     id: "turfhaven",
     nr: "01",
     title: "Openbare ruimte Turfhaven",
-    index: "Openbare ruimte Turfhaven",
+    index: "Openbare ruimte Turfhaven", kort: "Turfhaven",
     preview: "turfhaven/visual-1",
   },
   {
     id: "gracht",
     nr: "02",
     title: "Herinrichting Gedempte Gracht & - Burgwal",
-    index: "Herinrichting Gedempte Gracht & Gedempte Burgwal",
+    index: "Herinrichting Gedempte Gracht & Gedempte Burgwal", kort: "Gracht & Burgwal",
     preview: "gracht/visual-a-fase-2",
   },
   {
     id: "wijnhaven",
     nr: "03",
     title: "Herinrichting Wijnhaven",
-    index: "Herinrichting Wijnhaven",
+    index: "Herinrichting Wijnhaven", kort: "Wijnhaven",
     preview: "wijnhaven/plant-ilex-blue-princess",
   },
   {
     id: "zevensprong",
     nr: "04",
     title: "No-Regret maatregelen Zevensprong",
-    index: "No-Regret maatregelen Zevensprong",
+    index: "No-Regret maatregelen Zevensprong", kort: "Zevensprong",
     preview: "zevensprong/scenario-1d",
   },
   {
     id: "uitgevoerd",
     nr: "05",
     title: "Reeds uitgevoerde projecten",
-    index: "Reeds uitgevoerde projecten",
+    index: "Reeds uitgevoerde projecten", kort: "Uitgevoerd",
     preview: "uitgevoerd/kaapseplein-1",
   },
 ];
@@ -313,3 +313,5 @@ export const hofzichtlaan = {
     { code: "E", naam: "Sambucus nigra ‘Black Lace’", nl: "rode vlier", img: "uitgevoerd/hofzichtlaan-plant-e" },
   ],
 };
+
+export const PDF = { href: "zeno-hodes-portfolio.pdf", bestand: "Portfolio Zeno Hodes.pdf", label: "Portfolio als pdf" };

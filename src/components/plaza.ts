@@ -82,8 +82,8 @@ export function buildPlaza(w: number, h: number, opts: { titleTop: number; title
   // Places the bands stay out of: the title, and the two corners that carry a label.
   const vrij: Rect[] = [
     { x0: -10, y0: opts.titleTop - pitch * 1.6, x1: opts.titleRight + pitch, y1: h + 10 },
-    { x0: -10, y0: -10, x1: portrait ? w * 0.62 : 300, y1: portrait ? 78 : 92 },
-    { x0: w - (portrait ? 110 : 170), y0: -10, x1: w + 10, y1: portrait ? 78 : 92 },
+    // the header bar
+    { x0: -10, y0: -10, x1: w + 10, y1: portrait ? 70 : 82 },
     { x0: w - (portrait ? 130 : 200), y0: h - (portrait ? 100 : 130), x1: w + 10, y1: h + 10 },
   ];
 
