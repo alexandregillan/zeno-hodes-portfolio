@@ -1,0 +1,433 @@
+{
+ "over/portret": {
+  "w": 467,
+  "h": 802,
+  "kb": 21.2
+ },
+ "turfhaven/plan": {
+  "w": 1070,
+  "h": 913,
+  "kb": 113.1
+ },
+ "turfhaven/doorsnede": {
+  "w": 536,
+  "h": 280,
+  "kb": 9.2
+ },
+ "turfhaven/visual-1": {
+  "w": 811,
+  "h": 425,
+  "kb": 70.8
+ },
+ "turfhaven/visual-2": {
+  "w": 811,
+  "h": 425,
+  "kb": 79.3
+ },
+ "turfhaven/materiaal-kleur": {
+  "w": 418,
+  "h": 474,
+  "kb": 62.3
+ },
+ "turfhaven/materiaal-patroon": {
+  "w": 532,
+  "h": 679,
+  "kb": 160.7
+ },
+ "turfhaven/do-plan-zoom": {
+  "w": 2403,
+  "h": 3385,
+  "kb": 541.3
+ },
+ "turfhaven/do-plan": {
+  "w": 1200,
+  "h": 1690,
+  "kb": 344.0
+ },
+ "turfhaven/bakken-boven": {
+  "w": 655,
+  "h": 329,
+  "kb": 48.7
+ },
+ "turfhaven/bakken-aanzicht": {
+  "w": 2400,
+  "h": 452,
+  "kb": 80.9
+ },
+ "turfhaven/bak-3m": {
+  "w": 1928,
+  "h": 920,
+  "kb": 56.8
+ },
+ "turfhaven/bak-1m": {
+  "w": 879,
+  "h": 474,
+  "kb": 18.8
+ },
+ "turfhaven/bak-2m": {
+  "w": 1207,
+  "h": 647,
+  "kb": 27.6
+ },
+ "turfhaven/plant-prunus-serrulata": {
+  "w": 254,
+  "h": 333,
+  "kb": 38.6
+ },
+ "turfhaven/plant-liriope-muscari": {
+  "w": 258,
+  "h": 330,
+  "kb": 44.5
+ },
+ "turfhaven/plant-betula-nigra": {
+  "w": 254,
+  "h": 333,
+  "kb": 37.0
+ },
+ "turfhaven/plant-hedera-helix": {
+  "w": 258,
+  "h": 331,
+  "kb": 36.9
+ },
+ "turfhaven/plant-malus-evereste": {
+  "w": 254,
+  "h": 335,
+  "kb": 49.0
+ },
+ "turfhaven/plant-carex-morowii": {
+  "w": 258,
+  "h": 331,
+  "kb": 51.6
+ },
+ "turfhaven/plant-quercus-ilex": {
+  "w": 254,
+  "h": 333,
+  "kb": 43.4
+ },
+ "turfhaven/plant-geranium-macrorrhizum": {
+  "w": 336,
+  "h": 430,
+  "kb": 66.2
+ },
+ "gracht/plan": {
+  "w": 1636,
+  "h": 548,
+  "kb": 48.7
+ },
+ "gracht/profiel": {
+  "w": 350,
+  "h": 487,
+  "kb": 14.8
+ },
+ "gracht/vlonder-variant-1": {
+  "w": 1474,
+  "h": 1304,
+  "kb": 26.5
+ },
+ "gracht/vlonder-variant-2": {
+  "w": 1480,
+  "h": 1289,
+  "kb": 27.6
+ },
+ "gracht/vlonder-variant-3": {
+  "w": 1606,
+  "h": 1243,
+  "kb": 34.4
+ },
+ "gracht/vlonder-foto-1": {
+  "w": 389,
+  "h": 552,
+  "kb": 71.4
+ },
+ "gracht/vlonder-foto-2": {
+  "w": 390,
+  "h": 552,
+  "kb": 70.6
+ },
+ "gracht/vlonder-foto-3": {
+  "w": 390,
+  "h": 552,
+  "kb": 70.7
+ },
+ "gracht/vlonder-foto-4": {
+  "w": 389,
+  "h": 552,
+  "kb": 63.3
+ },
+ "gracht/visual-a-fase-1": {
+  "w": 808,
+  "h": 879,
+  "kb": 186.7
+ },
+ "gracht/visual-a-fase-2": {
+  "w": 808,
+  "h": 879,
+  "kb": 210.5
+ },
+ "gracht/visual-b-fase-1": {
+  "w": 808,
+  "h": 879,
+  "kb": 171.5
+ },
+ "gracht/visual-b-fase-2": {
+  "w": 808,
+  "h": 879,
+  "kb": 179.5
+ },
+ "wijnhaven/plan": {
+  "w": 1069,
+  "h": 913,
+  "kb": 91.9
+ },
+ "wijnhaven/referentie-1": {
+  "w": 191,
+  "h": 285,
+  "kb": 25.8
+ },
+ "wijnhaven/referentie-2": {
+  "w": 196,
+  "h": 285,
+  "kb": 27.1
+ },
+ "wijnhaven/plant-sarcococca-confusa": {
+  "w": 391,
+  "h": 288,
+  "kb": 43.1
+ },
+ "wijnhaven/plant-ilex-blue-prince": {
+  "w": 390,
+  "h": 271,
+  "kb": 54.0
+ },
+ "wijnhaven/plant-ilex-blue-princess": {
+  "w": 454,
+  "h": 316,
+  "kb": 87.4
+ },
+ "wijnhaven/plant-liriope-muscari": {
+  "w": 394,
+  "h": 269,
+  "kb": 53.8
+ },
+ "wijnhaven/plant-polystichum-setiferum": {
+  "w": 390,
+  "h": 271,
+  "kb": 47.1
+ },
+ "wijnhaven/plant-luzula-nivea": {
+  "w": 395,
+  "h": 266,
+  "kb": 60.1
+ },
+ "wijnhaven/principeprofiel": {
+  "w": 1348,
+  "h": 1313,
+  "kb": 73.9
+ },
+ "zevensprong/scenario-1d": {
+  "w": 821,
+  "h": 374,
+  "kb": 58.0
+ },
+ "zevensprong/scenario-3ab": {
+  "w": 821,
+  "h": 416,
+  "kb": 63.3
+ },
+ "zevensprong/kaart-1d": {
+  "w": 2144,
+  "h": 994,
+  "kb": 181.4,
+  "box_pt": [
+   28,
+   71,
+   414,
+   250
+  ]
+ },
+ "zevensprong/ref-kop-apeldoornselaan": {
+  "w": 365,
+  "h": 181,
+  "kb": 27.6
+ },
+ "zevensprong/ref-oversteek": {
+  "w": 362,
+  "h": 162,
+  "kb": 23.5
+ },
+ "zevensprong/ambitie-singel-1": {
+  "w": 354,
+  "h": 199,
+  "kb": 29.1
+ },
+ "zevensprong/ambitie-singel-2": {
+  "w": 354,
+  "h": 199,
+  "kb": 26.9
+ },
+ "zevensprong/ambitie-auto-1": {
+  "w": 353,
+  "h": 199,
+  "kb": 26.5
+ },
+ "zevensprong/ambitie-auto-2": {
+  "w": 353,
+  "h": 199,
+  "kb": 29.7
+ },
+ "zevensprong/ambitie-tram-1": {
+  "w": 354,
+  "h": 199,
+  "kb": 30.7
+ },
+ "zevensprong/ambitie-tram-2": {
+  "w": 353,
+  "h": 200,
+  "kb": 30.5
+ },
+ "zevensprong/ambitie-alles-1": {
+  "w": 353,
+  "h": 199,
+  "kb": 23.5
+ },
+ "zevensprong/ambitie-alles-2": {
+  "w": 354,
+  "h": 198,
+  "kb": 37.2
+ },
+ "uitgevoerd/kaapseplein-1": {
+  "w": 527,
+  "h": 446,
+  "kb": 63.2
+ },
+ "uitgevoerd/kaapseplein-2": {
+  "w": 530,
+  "h": 446,
+  "kb": 67.2
+ },
+ "uitgevoerd/kaapseplein-3": {
+  "w": 530,
+  "h": 446,
+  "kb": 86.0
+ },
+ "uitgevoerd/kaapseplein-4": {
+  "w": 527,
+  "h": 446,
+  "kb": 61.4
+ },
+ "uitgevoerd/kaapseplein-5": {
+  "w": 530,
+  "h": 446,
+  "kb": 59.1
+ },
+ "uitgevoerd/kaapseplein-6": {
+  "w": 530,
+  "h": 446,
+  "kb": 51.4
+ },
+ "uitgevoerd/boekhorststraat-1": {
+  "w": 527,
+  "h": 914,
+  "kb": 93.8
+ },
+ "uitgevoerd/boekhorststraat-2": {
+  "w": 595,
+  "h": 374,
+  "kb": 77.9
+ },
+ "uitgevoerd/boekhorststraat-3": {
+  "w": 776,
+  "h": 518,
+  "kb": 108.5
+ },
+ "uitgevoerd/ursulaland-1": {
+  "w": 389,
+  "h": 500,
+  "kb": 80.5
+ },
+ "uitgevoerd/ursulaland-2": {
+  "w": 499,
+  "h": 500,
+  "kb": 98.1
+ },
+ "uitgevoerd/ursulaland-3": {
+  "w": 718,
+  "h": 499,
+  "kb": 192.4
+ },
+ "uitgevoerd/hofzichtlaan-bouwbord": {
+  "w": 726,
+  "h": 497,
+  "kb": 129.7
+ },
+ "uitgevoerd/hofzichtlaan-plan": {
+  "w": 1600,
+  "h": 658,
+  "kb": 496.9
+ },
+ "uitgevoerd/hofzichtlaan-plant-a": {
+  "w": 380,
+  "h": 315,
+  "kb": 57.1
+ },
+ "uitgevoerd/hofzichtlaan-plant-b": {
+  "w": 291,
+  "h": 242,
+  "kb": 41.6
+ },
+ "uitgevoerd/hofzichtlaan-plant-c": {
+  "w": 291,
+  "h": 242,
+  "kb": 37.0
+ },
+ "uitgevoerd/hofzichtlaan-plant-d": {
+  "w": 288,
+  "h": 243,
+  "kb": 38.7
+ },
+ "uitgevoerd/hofzichtlaan-plant-e": {
+  "w": 290,
+  "h": 395,
+  "kb": 55.3
+ },
+ "uitgevoerd/stadhuis-1": {
+  "w": 385,
+  "h": 505,
+  "kb": 55.2
+ },
+ "uitgevoerd/stadhuis-2": {
+  "w": 494,
+  "h": 505,
+  "kb": 78.1
+ },
+ "uitgevoerd/stadhuis-3": {
+  "w": 714,
+  "h": 504,
+  "kb": 71.6
+ },
+ "uitgevoerd/berlagelaan-1": {
+  "w": 389,
+  "h": 500,
+  "kb": 61.0
+ },
+ "uitgevoerd/berlagelaan-2": {
+  "w": 499,
+  "h": 500,
+  "kb": 77.6
+ },
+ "uitgevoerd/berlagelaan-3": {
+  "w": 714,
+  "h": 503,
+  "kb": 140.7
+ },
+ "slot/oefening-7-a": {
+  "w": 514,
+  "h": 700,
+  "kb": 190.9
+ },
+ "slot/oefening-7-b": {
+  "w": 370,
+  "h": 670,
+  "kb": 134.0
+ }
+}

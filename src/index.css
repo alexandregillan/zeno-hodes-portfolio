@@ -1,0 +1,235 @@
+@import "@fontsource-variable/mona-sans/wdth.css";
+@import "@fontsource-variable/newsreader/opsz-italic.css";
+@import "tailwindcss";
+
+/*
+  Palette — taken from the Turfhaven material board in the portfolio itself:
+  the strooilaag (concrete floor), the mangaan band, the green planters and
+  their wooden seat rim. Paper stays white, as in the original pages.
+*/
+@theme {
+  --color-papier: #ffffff;
+  --color-strooi: #d9d5ce;
+  --color-strooi-licht: #ebe8e3;
+  --color-mangaan: #2e2a29;
+  --color-grijs: #6b6664;
+  --color-lijn: #dcd8d2;
+  --color-bak: #748262;
+  --color-bak-diep: #55633f;
+  --color-hout: #c2975b;
+  --color-omslag: #7b797a;
+  --color-slot: #b2b2b2;
+
+  --font-sans: "Mona Sans Variable", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Newsreader Variable", "Iowan Old Style", Georgia, serif;
+
+  --ease-uit: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-uit: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --breakpoint-xs: 26rem;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background: var(--color-papier);
+    color: var(--color-mangaan);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    font-weight: 400;
+    font-stretch: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: var(--color-bak);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-bak-diep);
+    outline-offset: 3px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  img {
+    -webkit-user-drag: none;
+  }
+}
+
+@layer components {
+  /* Page grid: one outer margin, used everywhere. */
+  .marge {
+    padding-inline: clamp(1.25rem, 5.2vw, 5.5rem);
+  }
+
+  .raster {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(1rem, 2vw, 2rem);
+  }
+
+  /* Upright sans carries the content. */
+  .kop-xl {
+    font-weight: 300;
+    font-stretch: 112%;
+    letter-spacing: -0.045em;
+    line-height: 0.86;
+  }
+
+  .kop {
+    font-size: clamp(2.1rem, 5.6vw, 5.25rem);
+    font-weight: 320;
+    font-stretch: 106%;
+    letter-spacing: -0.035em;
+    line-height: 0.98;
+    text-wrap: balance;
+  }
+
+  .tussenkop {
+    font-size: clamp(1.3rem, 2.1vw, 1.75rem);
+    font-weight: 420;
+    letter-spacing: -0.018em;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  .lees {
+    max-width: 34em;
+    text-wrap: pretty;
+    hyphens: auto;
+  }
+
+  .lees p + p {
+    margin-top: 1.05em;
+  }
+
+  /* Italic serif is the voice of annotation: subtitles, captions, Latin names. */
+  .noot {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 380;
+    font-variation-settings: "opsz" 20;
+    letter-spacing: 0;
+  }
+
+  .ondertitel {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 340;
+    font-variation-settings: "opsz" 48;
+    font-size: clamp(1.2rem, 2.2vw, 1.9rem);
+    line-height: 1.2;
+    color: var(--color-grijs);
+    text-wrap: balance;
+  }
+
+  .bijschrift {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-variation-settings: "opsz" 13;
+    font-size: 0.9375rem;
+    line-height: 1.35;
+    color: var(--color-grijs);
+  }
+
+  /* Wide-set lowercase, as on the original contents page. */
+  .spatie {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    line-height: 1.4;
+  }
+
+  /* Lining, proportional figures: Mona Sans's tabular zero is slashed, which reads as Ø. */
+  .cijfer {
+    font-variant-numeric: lining-nums proportional-nums;
+  }
+}
+
+@layer utilities {
+  .vloer {
+    background-color: var(--color-strooi);
+    background-image: url("./assets/strooilaag.png");
+    background-size: 144px 144px;
+  }
+
+  .geen-balk {
+    scrollbar-width: none;
+  }
+  .geen-balk::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Hero: the bands are laid one by one. */
+.banen path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  opacity: 0;
+  animation: baan 1.6s var(--ease-uit) forwards;
+}
+@keyframes baan {
+  0% {
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.loper {
+  animation: loper 2.4s var(--ease-in-uit) infinite;
+}
+@keyframes loper {
+  0% {
+    transform: translateY(-101%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(101%);
+  }
+}
